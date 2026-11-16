@@ -18,7 +18,8 @@ function J = Gamma_MAP(I, win_size, L)
     Cu2 = Cu^2;
     
     % Cmax: Soglia massima (solitamente sqrt(2) * Cu)
-    Cmax = sqrt(2) * Cu;
+    %Cmax = sqrt(2) * Cu;
+    Cmax = sqrt(1 + 2/L);
     
     % Creazione del kernel per la media locale
     h = ones(win_size, win_size) / (win_size^2);

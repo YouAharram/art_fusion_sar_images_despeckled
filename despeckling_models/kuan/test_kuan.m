@@ -6,7 +6,7 @@ X = airport.^2;
 
 % 2. Definisci i parametri
 winSize = 7;  % Finestra 5x5
-ENL = 4;          % Numero di look
+ENL = 1;          % Numero di look
 
 % 3. Applica il filtro
 Xf = kuanFilterSAR(X, winSize, ENL);
