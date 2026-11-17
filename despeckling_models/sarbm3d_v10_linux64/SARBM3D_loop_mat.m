@@ -13,5 +13,6 @@ for i = 1:length(files)
         imgD = SARBM3D_v10(imgS,L);
         dirImgOut =  fullfile(folderOUT, fileName);
         save(dirImgOut,"imgD");
-    end
+		i
+     end
 end
